@@ -1,0 +1,9 @@
+<launch>
+    <arg name="param_path" default="$(find-pkg-share udp_connector_ros2)/config/config.yaml"/>
+
+    <node pkg="udp_connector_ros2" exec="udp_connector_ros2_node" name="udp_connector_ros2_node">
+        <remap from="/receive_data" to="/data"/>
+
+        <param from="$(var param_path)"/>
+    </node>
+</launch>

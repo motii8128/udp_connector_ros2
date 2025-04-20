@@ -1,0 +1,8 @@
+/**:
+  ros__parameters:
+    enable_debug: true
+    port: 64257
+    addr: "127.0.0.1"
+    dest_port: 64256
+    dest_addr: "127.0.0.1"
+    send_message: "Hello from ROS2"
